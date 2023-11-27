@@ -24,6 +24,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Invalid credentials, display an error message
 
-        echo 'INVALID_CREDENTIALS';
+        header($_SERVER["SERVER_PROTOCOL"] . " 404 Not Found");
     }
 }
